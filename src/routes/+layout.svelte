@@ -1,18 +1,13 @@
 <script lang="ts">
+  import "../app.css";
   import { onMount } from "svelte";
   import { fade } from "svelte/transition";
-
-  import favicon from "$lib/assets/favicon.png";
 
   let { children } = $props();
 
   let ready = $state(false);
   onMount(() => (ready = true));
 </script>
-
-<svelte:head>
-  <link rel="icon" href={favicon} />
-</svelte:head>
 
 <div class="page-container">
   {#if ready}
@@ -37,31 +32,30 @@
 
   .page-container {
     box-sizing: border-box;
-    background-color: var(--mantle);
-    min-height: calc(
-      100vh - 1rem
-    ); /* Make it at least the height of the viewport */
-    width: 100%; /* Make it take up the full width */
-    padding: 1rem;
+    background-color: var(--color-ctp-mantle);
+    min-height: calc(100vh - 1rem);
+    min-width: calc(100vw - 1rem);
+    margin: 0.5rem;
+    padding: 0.5rem;
     border-radius: 0.5rem;
-    display: flex; /* Use flexbox to control content layout */
-    flex-direction: column; /* Stack content vertically */
-    align-items: center; /* Center content horizontally */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .center-container {
     box-sizing: border-box;
-    background-color: var(--crust);
-    width: 75vw; /* Make it take up the full width */
+    background-color: var(--color-ctp-crust);
+    width: 75vw;
     padding: 1rem;
     border-radius: 0.5rem;
-    display: flex; /* Use flexbox to control content layout */
-    flex-direction: column; /* Stack content vertically */
-    align-items: center; /* Center content horizontally */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .title {
-    color: var(--text);
+    color: var(--color-ctp-text);
     font-family: "Markazi Text";
   }
 </style>
