@@ -1,7 +1,12 @@
 /* @import url('https://unpkg.com/@catppuccin/palette/css/catppuccin.css'); */
 
 @import 'tailwindcss';
+@import '@skeletonlabs/skeleton';
+@import '@skeletonlabs/skeleton/optional/presets';
+@import '@skeletonlabs/skeleton/themes/cerberus';
 @import "@catppuccin/tailwindcss/mocha.css";
+
+@source '../node_modules/@skeletonlabs/skeleton-svelte/dist';
 
 @plugin '@tailwindcss/typography';
 
