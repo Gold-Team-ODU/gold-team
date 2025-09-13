@@ -20,5 +20,11 @@
 		"svelte-check": "^4.0.0",
 		"typescript": "^5.0.0",
 		"vite": "^7.0.4"
+	},
+	"dependencies": {
+		"@catppuccin/palette": "^1.7.1",
+		"@material/typography": "^14.0.0",
+		"@tailwindcss/vite": "^4.1.13",
+		"tailwindcss": "^4.1.13"
 	}
 }
