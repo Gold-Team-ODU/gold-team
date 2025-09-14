@@ -22,8 +22,8 @@
 }
 
 body {
-  background-color: var(--color-ctp-base);
-  color: var(--color-ctp-text);
+  background-color: var(--color-surface-100-900);
+  color: var(--color-surface-950-50);
 }
 
 sveltekit-body {
