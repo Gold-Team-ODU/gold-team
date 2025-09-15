@@ -3,7 +3,7 @@
   import PageTitle from "../PageTitle.svelte";
   import Placeholder from "../Placeholder.svelte";
 
-  let group = $state("problem");
+  let group = $state("lab_1_outline");
 </script>
 
 <svelte:head>
