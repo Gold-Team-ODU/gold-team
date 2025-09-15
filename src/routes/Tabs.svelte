@@ -8,49 +8,57 @@
   } from "@lucide/svelte";
 </script>
 
-<aside class="preset-gradient justify-self-center rounded-3xl w-full">
-  <div class="place-self-center">
-    <div class="grid grid-cols-5 gap-10 md:gap-5 p-2 place-items-center">
-      <a
-        href="/"
-        class="anchor grid grid-cols-[auto_1fr] gap-0.5 text-surface-50"
-        title="Home"
+<aside class="w-[calc(100%_-_1rem)] relative place-self-center">
+  <!-- Gradient shadow thanks to https://ibelick.com/blog/create-gradient-shadows-tailwind-css -->
+  <div
+    class="absolute -inset-1.5 rounded-3xl preset-gradient opacity-75 blur"
+  ></div>
+  <div class="rounded-3xl relative preset-tonal-primary">
+    <div class="place-self-center">
+      <div
+        class="grid grid-cols-5 gap-10 md:gap-5 p-2 place-items-center bg-gradient-to-r from-primary-contrast-200-800 to-tertiary-contrast-200-800 text-transparent bg-clip-text"
       >
-        <House />
-        <div class="max-md:invisible max-md:w-0">Home</div>
-      </a>
-      <a
-        href="/presentations"
-        class="anchor grid grid-cols-[auto_1fr] gap-0.5 text-surface-50"
-        title="Presentations"
-      >
-        <Presentation />
-        <div class="max-md:invisible max-md:w-0">Presentations</div>
-      </a>
-      <a
-        href="/labs"
-        class="anchor grid grid-cols-[auto_1fr] gap-0.5 text-surface-50"
-        title="Labs"
-      >
-        <FlaskConical />
-        <div class="max-md:invisible max-md:w-0">Labs</div>
-      </a>
-      <a
-        href="/appendix"
-        class="anchor grid grid-cols-[auto_1fr] gap-0.5 text-surface-50"
-        title="Appendix"
-      >
-        <Album />
-        <div class="max-md:invisible max-md:w-0">Appendix</div>
-      </a>
-      <a
-        href="/team"
-        class="anchor grid grid-cols-[auto_1fr] gap-0.5 text-surface-50"
-        title="Team"
-      >
-        <Users />
-        <div class="max-md:invisible max-md:w-0">Team</div>
-      </a>
+        <a
+          href="/"
+          class="grid grid-cols-[auto_1fr] gap-0.5 hover:text-surface-contrast-50-950"
+          title="Home"
+        >
+          <span class="material-symbols-rounded"> home </span>
+          <div class="max-md:invisible max-md:w-0">Home</div>
+        </a>
+        <a
+          href="/presentations"
+          class="grid grid-cols-[auto_1fr] gap-0.5 hover:text-surface-contrast-50-950"
+          title="Presentations"
+        >
+          <span class="material-symbols-rounded"> monitor </span>
+          <div class="max-md:invisible max-md:w-0">Presentations</div>
+        </a>
+        <a
+          href="/labs"
+          class="grid grid-cols-[auto_1fr] gap-0.5 hover:text-surface-contrast-50-950"
+          title="Labs"
+        >
+          <span class="material-symbols-rounded"> experiment </span>
+          <div class="max-md:invisible max-md:w-0">Labs</div>
+        </a>
+        <a
+          href="/appendix"
+          class="grid grid-cols-[auto_1fr] gap-0.5 hover:text-surface-contrast-50-950"
+          title="Appendix"
+        >
+          <span class="material-symbols-rounded"> book </span>
+          <div class="max-md:invisible max-md:w-0">Appendix</div>
+        </a>
+        <a
+          href="/team"
+          class="grid grid-cols-[auto_1fr] gap-0.5 hover:text-surface-contrast-50-950"
+          title="Team"
+        >
+          <span class="material-symbols-rounded"> group </span>
+          <div class="max-md:invisible max-md:w-0">Team</div>
+        </a>
+      </div>
     </div>
   </div>
 </aside>

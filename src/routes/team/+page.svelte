@@ -1,7 +1,5 @@
 <script lang="ts">
-  import { Tabs } from "@skeletonlabs/skeleton-svelte";
   import PageTitle from "../PageTitle.svelte";
-  import Placeholder from "../Placeholder.svelte";
 
   let group = $state("problem");
 </script>

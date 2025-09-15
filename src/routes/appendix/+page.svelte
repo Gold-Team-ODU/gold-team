@@ -1,7 +1,6 @@
 <script lang="ts">
   import { Tabs } from "@skeletonlabs/skeleton-svelte";
   import PageTitle from "../PageTitle.svelte";
-  import Placeholder from "../Placeholder.svelte";
   import References from "./References.svelte";
   import Glossary from "./Glossary.svelte";
 
