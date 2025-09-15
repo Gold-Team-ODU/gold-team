@@ -6,25 +6,11 @@
 @import '@skeletonlabs/skeleton/themes/cerberus';
 @import "@catppuccin/tailwindcss/mocha.css";
 
+@custom-variant dark (&:where([data-mode=dark], [data-mode=dark] *));
+
 @source '../node_modules/@skeletonlabs/skeleton-svelte/dist';
 
 @plugin '@tailwindcss/typography';
-
-/* fallback to dark mode */
-:root {
-  color-scheme: dark;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color-scheme: light;
-  }
-}
-
-body {
-  background-color: var(--color-surface-100-900);
-  color: var(--color-surface-950-50);
-}
 
 sveltekit-body {
   display: contents

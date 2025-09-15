@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "@catppuccin/palette": "^1.7.1",
+    "@lucide/svelte": "^0.544.0",
     "@sveltejs/adapter-static": "^3.0.9"
   }
 }

@@ -19,7 +19,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 80vh;
+    height: 40vh;
     text-align: center;
   }
 
@@ -29,14 +29,14 @@
   }
 
   .error-container h1 {
-    font-size: 10rem;
+    font-size: 5rem;
     font-weight: 500;
     margin: 0;
     line-height: 1;
   }
 
   .error-container p {
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin: 1rem 0;
   }
 </style>
