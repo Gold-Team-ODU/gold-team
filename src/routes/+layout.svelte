@@ -20,7 +20,7 @@
   {#if ready}
     <!-- Fade in content pane -->
     <div
-      class="mx-auto z-[-1] min-h-screen place-self-center max-w-xl md:max-w-4xl 2xl:max-w-7xl bg-surface-100-900 drop-shadow-[0_0_20px_rgba(0,0,0,0)] drop-shadow-surface-400/80 rounded-3xl"
+      class="container mx-auto z-[-1] min-h-screen place-self-center max-w-xl md:max-w-4xl 2xl:max-w-7xl bg-surface-100-900 drop-shadow-[0_0_20px_rgba(0,0,0,0)] drop-shadow-surface-400/80 rounded-3xl"
       in:fade={{ duration: 500, delay: 100 }}
     >
       <div class="z-1 min-h-screen grid grid-rows-[auto_1fr_auto] gap-5">

@@ -11,82 +11,37 @@
 </svelte:head>
 
 <div>
-  <div class="grid grid-cols-[auto_1fr] p-2">
+  <div class="grid grid-cols-[auto_1fr] p-2 w-full">
     <header
       class="h2 px-5 [writing-mode:vertical-lr] rotate-180 place-self-start"
     >
-      Our Goal
+      Lab Documents
     </header>
-    <article class="text-justify self-center pl-5 text-base xl:text-lg">
-      <p>
-        We aim to develop a game to help those who struggle to understand
-        algebra. Our game will be a turn-based, rogue-like adventure through
-        algebra. With dungeons, bosses, and power-ups all throughout, you'll be
-        engaged in the world as much as you are with the math. But be sure to
-        calculate your next step carefully. Damage is dealt to the reckless, and
-        penalties will be incurred for wrong answers. Find hints and collect
-        extra lives to survive your mathematical journey.
-      </p>
-      <br />
-      <p class="italic font-semibold font-serif">
-        “Gamify algebra—turn problem-solving into an adventure!”
-      </p>
+    <article class="text-justify pl-5 text-base xl:text-lg w-full flex-1">
+      <div
+        class="card preset-filled-surface-50-950 border-surface-200-800 divide-surface-200-800 block divide-y overflow-hidden"
+      >
+        <Tabs value={group} onValueChange={(e) => (group = e.value)} fluid>
+          {#snippet list()}
+            <Tabs.Control value="lab_1_outline">
+              <header class="h4">Lab 1 Outline</header>
+            </Tabs.Control>
+          {/snippet}
+          {#snippet content()}
+            <Tabs.Panel value="lab_1_outline">
+              <article class="text-justify text-lg p-5">
+                <iframe
+                  src="https://docs.google.com/document/d/e/2PACX-1vQOmUq5oIOYB-PJYY6zwtcVI1shSL-poTObS2IZOUonHDsVfZXYODo27FMYxChgeraYgyCY_BtbYsWa/pub?embedded=true"
+                  title="Lab 1 Outline"
+                  class="w-full h-[calc(100vh-25rem)]"
+                  allowfullscreen
+                ></iframe>
+              </article>
+            </Tabs.Panel>
+          {/snippet}
+        </Tabs>
+      </div>
     </article>
-  </div>
-
-  <hr class="hr border-t-2 my-5" />
-
-  <Tabs value={group} onValueChange={(e) => (group = e.value)} fluid>
-    {#snippet list()}
-      <Tabs.Control value="problem"
-        ><header class="h3">Problem</header></Tabs.Control
-      >
-      <Tabs.Control value="solution"
-        ><header class="h3">Solution</header></Tabs.Control
-      >
-    {/snippet}
-    {#snippet content()}
-      <Tabs.Panel value="problem">
-        <article class="text-justify text-lg p-5">
-          <p>
-            <span class="font-bold">Algebra</span>, while being a very useful
-            skill for daily life and forming the backbone of mathematics, is
-            <span class="font-bold">extremely difficult</span> for the average person
-            to understand.
-          </p>
-        </article>
-      </Tabs.Panel>
-      <Tabs.Panel value="solution">
-        <article class="text-justify text-lg p-5">
-          <p>
-            A <span class="font-bold">solo, turn-based, rogue-like game</span> where
-            the player adventures through dungeons, tackling enemies and increasing
-            in power and algebraic knowledge as they adventure along.
-          </p>
-        </article>
-      </Tabs.Panel>
-    {/snippet}
-  </Tabs>
-
-  <hr class="hr border-t-2 my-5" />
-
-  <div class="grid grid-rows-2 md:grid-cols-2 gap-2 justify-items-center">
-    <div
-      class="card preset-filled-surface-50-950 border-[3px] border-surface-200-800 divide-surface-200-800 block divide-y overflow-hidden p-2"
-    >
-      <header class="h2">Home</header>
-      <article>
-        <Placeholder />
-      </article>
-    </div>
-    <div
-      class="card preset-filled-surface-50-950 border-[3px] border-surface-200-800 divide-surface-200-800 block divide-y overflow-hidden p-2"
-    >
-      <header class="h2">Home</header>
-      <article>
-        <Placeholder />
-      </article>
-    </div>
   </div>
 </div>
 

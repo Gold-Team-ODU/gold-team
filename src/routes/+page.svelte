@@ -1,7 +1,6 @@
 <script lang="ts">
   import { Tabs } from "@skeletonlabs/skeleton-svelte";
   import PageTitle from "./PageTitle.svelte";
-  import Placeholder from "./Placeholder.svelte";
 
   let group = $state("problem");
 </script>
@@ -28,7 +27,7 @@
         extra lives to survive your mathematical journey.
       </p>
       <br />
-      <p class="italic font-semibold font-serif">
+      <p class="italic font-semibold font-serif text-xl text-center">
         “Gamify algebra—turn problem-solving into an adventure!”
       </p>
 
@@ -39,27 +38,25 @@
       >
         <Tabs value={group} onValueChange={(e) => (group = e.value)} fluid>
           {#snippet list()}
-            <Tabs.Control value="problem"
-              ><header class="h3">Problem</header></Tabs.Control
-            >
-            <Tabs.Control value="solution"
-              ><header class="h3">Solution</header></Tabs.Control
-            >
+            <Tabs.Control value="problem">
+              <header class="h3">Problem</header>
+            </Tabs.Control>
+            <Tabs.Control value="solution">
+              <header class="h3">Solution</header>
+            </Tabs.Control>
           {/snippet}
           {#snippet content()}
-            <div class="accent-error-50-950">
-              <Tabs.Panel value="problem">
-                <article class="text-justify text-lg p-5">
-                  <p>
-                    <span class="font-bold">Algebra</span>, while being a very
-                    useful skill for daily life and forming the backbone of
-                    mathematics, is
-                    <span class="font-bold">extremely difficult</span> for the average
-                    person to understand.
-                  </p>
-                </article>
-              </Tabs.Panel>
-            </div>
+            <Tabs.Panel value="problem">
+              <article class="text-justify text-lg p-5">
+                <p>
+                  <span class="font-bold">Algebra</span>, while being a very
+                  useful skill for daily life and forming the backbone of
+                  mathematics, is
+                  <span class="font-bold">extremely difficult</span> for the average
+                  person to understand.
+                </p>
+              </article>
+            </Tabs.Panel>
             <Tabs.Panel value="solution">
               <article class="text-justify text-lg p-5">
                 <p>
@@ -80,7 +77,7 @@
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
         <div
-          class="card preset-filled-surface-50-950 border-[3px] border-surface-200-800 divide-surface-200-800 block divide-y overflow-hidden space-y-4 p-4"
+          class="card preset-filled-surface-50-950 border-surface-200-800 divide-surface-200-800 block divide-y overflow-hidden space-y-4 p-4"
         >
           <header class="h3"><p>Customers</p></header>
           <article>
@@ -94,7 +91,7 @@
           </article>
         </div>
         <div
-          class="card preset-filled-surface-50-950 border-[3px] border-surface-200-800 divide-surface-200-800 block divide-y overflow-hidden space-y-4 p-4"
+          class="card preset-filled-surface-50-950 border-surface-200-800 divide-surface-200-800 block divide-y overflow-hidden space-y-4 p-4"
         >
           <header class="h3"><p>End Users</p></header>
           <article>

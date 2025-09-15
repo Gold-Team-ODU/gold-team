@@ -38,12 +38,11 @@
         <p>Rogue-like Algebra</p>
       </a>
 
-      <span
-        class="vr max-md:invisible max-md:w-0 border-l-2 border-surface-200-700"
+      <span class="vr max-md:invisible max-md:w-0 border-l-2 border-surface-700"
       ></span>
 
       <p
-        class="max-md:invisible max-md:w-0 text-xs text-surface-500 drop-shadow-[0_0px_0.5px_rgba(0,0,0,0)] drop-shadow-surface-950"
+        class="max-md:invisible max-md:w-0 text-xs text-surface-700-300 drop-shadow-[0_0px_0.5px_rgba(0,0,0,0)] drop-shadow-surface-950"
       >
         by the <span
           class="font-semibold text-shadow-[0_0_20px_rgba(0,0,0,0)] text-shadow-amber-400/50"
