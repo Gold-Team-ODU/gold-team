@@ -25,7 +25,9 @@
   </script>
 </svelte:head>
 
-<Switch {checked} {onCheckedChange}>
-  {#snippet inactiveChild()}<IconMoon size="14" />{/snippet}
-  {#snippet activeChild()}<IconSun size="14" />{/snippet}
-</Switch>
+<div>
+  <Switch {checked} {onCheckedChange}>
+    {#snippet inactiveChild()}<IconMoon size="14" />{/snippet}
+    {#snippet activeChild()}<IconSun size="14" />{/snippet}
+  </Switch>
+</div>

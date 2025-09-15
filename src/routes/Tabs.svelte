@@ -1,30 +1,55 @@
 <script>
-  import { House, Users } from "@lucide/svelte";
+  import {
+    Album,
+    FlaskConical,
+    House,
+    Presentation,
+    Users,
+  } from "@lucide/svelte";
 </script>
 
 <aside class="preset-gradient justify-self-center rounded-container w-full">
   <div class="place-self-center">
-    <div class="grid grid-cols-3 gap-20 p-2">
+    <div class="grid grid-cols-5 gap-10 md:gap-5 p-2 place-items-center">
       <a
         href="/"
         class="anchor grid grid-cols-[auto_1fr] gap-0.5 text-surface-50"
+        title="Home"
       >
         <House />
-        Home
+        <div class="max-md:invisible max-md:w-0">Home</div>
       </a>
       <a
-        href="/"
+        href="/presentations"
         class="anchor grid grid-cols-[auto_1fr] gap-0.5 text-surface-50"
+        title="Presentations"
       >
-        <House />
-        Home
+        <Presentation />
+        <div class="max-md:invisible max-md:w-0">Presentations</div>
       </a>
       <a
-        href="/"
+        href="/labs"
         class="anchor grid grid-cols-[auto_1fr] gap-0.5 text-surface-50"
+        title="Labs"
+      >
+        <FlaskConical />
+        <div class="max-md:invisible max-md:w-0">Labs</div>
+      </a>
+      <a
+        href="/appendix"
+        class="anchor grid grid-cols-[auto_1fr] gap-0.5 text-surface-50"
+        title="Appendix"
+      >
+        <Album />
+        <div class="max-md:invisible max-md:w-0">Appendix</div>
+      </a>
+      <a
+        href="/team"
+        class="anchor grid grid-cols-[auto_1fr] gap-0.5 text-surface-50"
+        title="Team"
       >
         <Users />
-        Team
+        <div class="max-md:invisible max-md:w-0">Team</div>
       </a>
     </div>
   </div>

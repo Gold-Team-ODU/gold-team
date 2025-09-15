@@ -1,12 +1,33 @@
 <script lang="ts">
+  import { onMount } from "svelte";
+
   import "../app.css";
 
   import Tabs from "./Tabs.svelte";
 
   import { Avatar } from "@skeletonlabs/skeleton-svelte";
+
+  let scrollY = $state(0);
+  let isAtTop = $derived(scrollY <= 10); // Small threshold to account for slight movements
+
+  onMount(() => {
+    const handleScroll = () => {
+      scrollY = window.scrollY;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  });
 </script>
 
-<header class="sticky top-0 z-50 px-5 mb-2 backdrop-blur-md rounded-3xl">
+<header
+  class="sticky top-0 z-50 px-5 mb-2 backdrop-blur-2xl {isAtTop
+    ? 'rounded-3xl'
+    : 'rounded-b-3xl'}"
+>
   <div class="grid grid-cols-[1fr_auto] gap-2 py-5">
     <div class="grid grid-cols-[auto_auto_1fr] items-center gap-2">
       <a
@@ -17,10 +38,10 @@
       </a>
 
       <span
-        class="vr border-l-2 invisible w-0 md:visible md:w-auto rem border-surface-200-700"
+        class="vr max-md:invisible max-md:w-0 border-l-2 border-surface-200-700"
       ></span>
 
-      <p class="invisible w-0 md:visible md:w-auto text-xs text-surface-500">
+      <p class="max-md:invisible max-md:w-0 text-xs text-surface-500">
         by the <span
           class="font-semibold text-shadow-[0_0_20px_rgba(0,0,0,0)] text-shadow-amber-400/30"
           >Gold</span
