@@ -8,7 +8,7 @@
   } from "@lucide/svelte";
 </script>
 
-<aside class="preset-gradient justify-self-center rounded-container w-full">
+<aside class="preset-gradient justify-self-center rounded-3xl w-full">
   <div class="place-self-center">
     <div class="grid grid-cols-5 gap-10 md:gap-5 p-2 place-items-center">
       <a

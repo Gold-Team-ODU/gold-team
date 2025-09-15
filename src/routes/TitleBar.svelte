@@ -24,11 +24,11 @@
 </script>
 
 <header
-  class="sticky top-0 z-50 px-5 w-full backdrop-blur-2xl {isAtTop
+  class="sticky top-0 z-50 w-full backdrop-blur-2xl {isAtTop
     ? 'rounded-3xl'
     : 'rounded-b-3xl'}"
 >
-  <div class="grid grid-cols-[1fr_auto] gap-2 py-5">
+  <div class="grid grid-cols-[1fr_auto] gap-2 p-5">
     <div class="grid grid-cols-[auto_auto_1fr] items-center gap-2">
       <!-- Thanks stack overflow https://stackoverflow.com/a/74753353/17004103-->
       <a
