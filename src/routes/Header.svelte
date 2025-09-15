@@ -80,7 +80,11 @@
   }
 
   .preset-glass-surface {
-    background: color-mix(in oklab, var(--color-surface-50-950) 40%, transparent);
+    background: color-mix(
+      in oklab,
+      var(--color-surface-50-950) 40%,
+      transparent
+    );
     box-shadow: 0 0px 30px
       color-mix(in oklab, var(--color-surface-50-950) 50%, transparent) inset;
     backdrop-filter: blur(16px);

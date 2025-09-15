@@ -1,23 +1,19 @@
-<script>
-  import {
-    Album,
-    FlaskConical,
-    House,
-    Presentation,
-    Users,
-  } from "@lucide/svelte";
-</script>
-
 <aside class="w-[calc(100%_-_1rem)] relative place-self-center">
   <!-- Gradient shadow thanks to https://ibelick.com/blog/create-gradient-shadows-tailwind-css -->
   <div
-    class="absolute -inset-1.5 rounded-3xl preset-gradient opacity-75 blur"
+    class="absolute -inset-1.5 preset-gradient opacity-75 blur rounded-3xl"
   ></div>
-  <div class="rounded-3xl relative preset-tonal-primary">
-    <div class="place-self-center">
-      <div
-        class="grid grid-cols-5 gap-10 md:gap-5 p-2 place-items-center bg-gradient-to-r from-primary-contrast-200-800 to-tertiary-contrast-200-800 text-transparent bg-clip-text"
-      >
+  <!-- White shine -->
+  <div
+    class="absolute -inset-0 bg-surface-50 opacity-75 blur-[3px] rounded-3xl"
+  ></div>
+  <!-- Main tab bar -->
+  <div class="relative preset-tonal-surface rounded-3xl">
+    <!-- Center icons & cut out text (https://stackoverflow.com/a/71206137/17004103) -->
+    <div
+      class="place-self-center bg-gradient-to-r from-primary-contrast-200-800 to-tertiary-contrast-200-800 text-transparent bg-clip-text"
+    >
+      <div class="grid grid-cols-5 gap-10 md:gap-5 p-2 place-items-center">
         <a
           href="/"
           class="grid grid-cols-[auto_1fr] gap-0.5 hover:text-surface-contrast-50-950"
