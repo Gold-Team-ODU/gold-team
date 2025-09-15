@@ -31,62 +31,84 @@
       <p class="italic font-semibold font-serif">
         “Gamify algebra—turn problem-solving into an adventure!”
       </p>
+
+      <hr class="hr border-t-2 my-5" />
+
+      <div
+        class="card preset-filled-surface-50-950 border-surface-200-800 divide-surface-200-800 block divide-y overflow-hidden"
+      >
+        <Tabs value={group} onValueChange={(e) => (group = e.value)} fluid>
+          {#snippet list()}
+            <Tabs.Control value="problem"
+              ><header class="h3">Problem</header></Tabs.Control
+            >
+            <Tabs.Control value="solution"
+              ><header class="h3">Solution</header></Tabs.Control
+            >
+          {/snippet}
+          {#snippet content()}
+            <div class="accent-error-50-950">
+              <Tabs.Panel value="problem">
+                <article class="text-justify text-lg p-5">
+                  <p>
+                    <span class="font-bold">Algebra</span>, while being a very
+                    useful skill for daily life and forming the backbone of
+                    mathematics, is
+                    <span class="font-bold">extremely difficult</span> for the average
+                    person to understand.
+                  </p>
+                </article>
+              </Tabs.Panel>
+            </div>
+            <Tabs.Panel value="solution">
+              <article class="text-justify text-lg p-5">
+                <p>
+                  A <span class="font-bold"
+                    >solo, turn-based, rogue-like game</span
+                  >
+                  where the player adventures through dungeons, tackling enemies
+                  and increasing in power and algebraic knowledge as they adventure
+                  along.
+                </p>
+              </article>
+            </Tabs.Panel>
+          {/snippet}
+        </Tabs>
+      </div>
+
+      <hr class="hr border-t-2 my-5" />
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+        <div
+          class="card preset-filled-surface-50-950 border-[3px] border-surface-200-800 divide-surface-200-800 block divide-y overflow-hidden space-y-4 p-4"
+        >
+          <header class="h3"><p>Customers</p></header>
+          <article>
+            <ul class="list-inside list-disc space-y-2">
+              <li>Schools and tutoring centers</li>
+              <li>Parents who want to help their kids learn math</li>
+              <li>Self-learners improving their algebra skills</li>
+              <li>Libraries and Community learning programs</li>
+              <li>Companies for employee training</li>
+            </ul>
+          </article>
+        </div>
+        <div
+          class="card preset-filled-surface-50-950 border-[3px] border-surface-200-800 divide-surface-200-800 block divide-y overflow-hidden space-y-4 p-4"
+        >
+          <header class="h3"><p>End Users</p></header>
+          <article>
+            <ul class="list-inside list-disc space-y-2">
+              <li>Middle and high school students</li>
+              <li>College students needing extra math practice</li>
+              <li>Gamers who enjoy strategy games</li>
+              <li>STEM learners and aspiring programmers</li>
+              <li>Adults wanting to improve their math skills</li>
+            </ul>
+          </article>
+        </div>
+      </div>
     </article>
-  </div>
-
-  <hr class="hr border-t-2 my-5" />
-
-  <Tabs value={group} onValueChange={(e) => (group = e.value)} fluid>
-    {#snippet list()}
-      <Tabs.Control value="problem"
-        ><header class="h3">Problem</header></Tabs.Control
-      >
-      <Tabs.Control value="solution"
-        ><header class="h3">Solution</header></Tabs.Control
-      >
-    {/snippet}
-    {#snippet content()}
-      <Tabs.Panel value="problem">
-        <article class="text-justify text-lg p-5">
-          <p>
-            <span class="font-bold">Algebra</span>, while being a very useful
-            skill for daily life and forming the backbone of mathematics, is
-            <span class="font-bold">extremely difficult</span> for the average person
-            to understand.
-          </p>
-        </article>
-      </Tabs.Panel>
-      <Tabs.Panel value="solution">
-        <article class="text-justify text-lg p-5">
-          <p>
-            A <span class="font-bold">solo, turn-based, rogue-like game</span> where
-            the player adventures through dungeons, tackling enemies and increasing
-            in power and algebraic knowledge as they adventure along.
-          </p>
-        </article>
-      </Tabs.Panel>
-    {/snippet}
-  </Tabs>
-
-  <hr class="hr border-t-2 my-5" />
-
-  <div class="grid grid-rows-2 md:grid-cols-2 gap-2 justify-items-center">
-    <div
-      class="card preset-filled-surface-50-950 border-[3px] border-surface-200-800 divide-surface-200-800 block divide-y overflow-hidden p-2"
-    >
-      <header class="h2">Home</header>
-      <article>
-        <Placeholder />
-      </article>
-    </div>
-    <div
-      class="card preset-filled-surface-50-950 border-[3px] border-surface-200-800 divide-surface-200-800 block divide-y overflow-hidden p-2"
-    >
-      <header class="h2">Home</header>
-      <article>
-        <Placeholder />
-      </article>
-    </div>
   </div>
 </div>
 

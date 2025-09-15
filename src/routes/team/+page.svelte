@@ -18,9 +18,9 @@
       Meet the Team
     </header>
     <article class="text-justify self-center pl-5 text-base xl:text-lg">
-      <div class="grid grid-rows-2 md:grid-cols-2 gap-2">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
         <div
-          class="card preset-filled-surface-50-950 border-[1px] border-surface-200-800 divide-surface-200-800 block divide-y overflow-hidden"
+          class="card preset-filled-surface-50-950 border-surface-200-800 divide-surface-200-800 block divide-y divide- overflow-hidden"
         >
           <img
             src="/img/mem/brennen_gabriel.jpg"
@@ -37,7 +37,7 @@
           </article>
         </div>
         <div
-          class="card preset-filled-surface-50-950 border-[1px] border-surface-200-800 divide-surface-200-800 block divide-y overflow-hidden"
+          class="card preset-filled-surface-50-950 border-surface-200-800 divide-surface-200-800 block divide-y divide- overflow-hidden"
         >
           <img
             src="/img/mem/gabriel_lugo.jpg"
@@ -54,7 +54,7 @@
           </article>
         </div>
         <div
-          class="card preset-filled-surface-50-950 border-[1px] border-surface-200-800 divide-surface-200-800 block divide-y overflow-hidden"
+          class="card preset-filled-surface-50-950 border-surface-200-800 divide-surface-200-800 block divide-y divide- overflow-hidden"
         >
           <img
             src="/img/mem/jillian_cequeria.jpg"
@@ -71,7 +71,7 @@
           </article>
         </div>
         <div
-          class="card preset-filled-surface-50-950 border-[1px] border-surface-200-800 divide-surface-200-800 block divide-y overflow-hidden"
+          class="card preset-filled-surface-50-950 border-surface-200-800 divide-surface-200-800 block divide-y divide- overflow-hidden"
         >
           <img
             src="/img/mem/brandon_thomas.jpeg"
@@ -87,7 +87,7 @@
           </article>
         </div>
         <div
-          class="card preset-filled-surface-50-950 border-[1px] border-surface-200-800 divide-surface-200-800 block divide-y overflow-hidden"
+          class="card preset-filled-surface-50-950 border-surface-200-800 divide-surface-200-800 block divide-y divide- overflow-hidden"
         >
           <img
             src="/img/mem/jacob_thompson.png"
@@ -106,7 +106,7 @@
           </article>
         </div>
         <div
-          class="card preset-filled-surface-50-950 border-[1px] border-surface-200-800 divide-surface-200-800 block divide-y overflow-hidden"
+          class="card preset-filled-surface-50-950 border-surface-200-800 divide-surface-200-800 block divide-y divide- overflow-hidden"
         >
           <img
             src="/img/mem/bryan_baker.png"

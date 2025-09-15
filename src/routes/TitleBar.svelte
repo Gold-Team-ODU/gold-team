@@ -24,15 +24,16 @@
 </script>
 
 <header
-  class="sticky top-0 z-50 px-5 mb-2 backdrop-blur-2xl {isAtTop
+  class="sticky top-0 z-50 px-5 w-full backdrop-blur-2xl {isAtTop
     ? 'rounded-3xl'
     : 'rounded-b-3xl'}"
 >
   <div class="grid grid-cols-[1fr_auto] gap-2 py-5">
     <div class="grid grid-cols-[auto_auto_1fr] items-center gap-2">
+      <!-- Thanks stack overflow https://stackoverflow.com/a/74753353/17004103-->
       <a
         href="/"
-        class="font-[Markazi_Text] text-3xl md:text-4xl font-extrabold md:visible text-surface-950-50"
+        class="font-[Markazi_Text] text-3xl md:text-4xl font-extrabold md:visible text-surface-950-50 drop-shadow-[0_0px_0.5px_rgba(0,0,0,0)] drop-shadow-surface-950"
       >
         <p>Rogue-like Algebra</p>
       </a>
@@ -41,9 +42,11 @@
         class="vr max-md:invisible max-md:w-0 border-l-2 border-surface-200-700"
       ></span>
 
-      <p class="max-md:invisible max-md:w-0 text-xs text-surface-500">
+      <p
+        class="max-md:invisible max-md:w-0 text-xs text-surface-500 drop-shadow-[0_0px_0.5px_rgba(0,0,0,0)] drop-shadow-surface-950"
+      >
         by the <span
-          class="font-semibold text-shadow-[0_0_20px_rgba(0,0,0,0)] text-shadow-amber-400/30"
+          class="font-semibold text-shadow-[0_0_20px_rgba(0,0,0,0)] text-shadow-amber-400/50"
           >Gold</span
         > Team
       </p>
