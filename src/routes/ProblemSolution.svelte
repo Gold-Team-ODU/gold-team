@@ -9,16 +9,12 @@
 >
   <Tabs value={group} onValueChange={(e) => (group = e.value)} fluid>
     {#snippet list()}
-      <Tabs.Control value="problem">
-        <header class="h3">Problem</header>
-      </Tabs.Control>
-      <Tabs.Control value="solution">
-        <header class="h3">Solution</header>
-      </Tabs.Control>
+      <Tabs.Control value="problem">Problem</Tabs.Control>
+      <Tabs.Control value="solution">Solution</Tabs.Control>
     {/snippet}
     {#snippet content()}
       <Tabs.Panel value="problem">
-        <article class="text-justify text-lg p-5">
+        <article class="text-justify space-y-2 p-4 pt-2">
           <p>
             <span class="font-bold">Algebra</span>, while being a very useful
             skill for daily life and forming the backbone of mathematics, is
@@ -28,7 +24,7 @@
         </article>
       </Tabs.Panel>
       <Tabs.Panel value="solution">
-        <article class="text-justify text-lg p-5">
+        <article class="text-justify space-y-2 p-4 pt-2">
           <p>
             A <span class="font-bold">solo, turn-based, rogue-like game</span>
             where the player adventures through dungeons, tackling enemies and increasing

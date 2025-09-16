@@ -2,7 +2,7 @@
   <div
     class="card preset-filled-surface-50-950 border-surface-200-800 divide-surface-200-800 block divide-y overflow-hidden space-y-4 p-4"
   >
-    <header class="h3"><p>Customers</p></header>
+    <header class="h5"><p>Customers</p></header>
     <article>
       <ul class="list-inside list-disc space-y-2">
         <li>Schools and tutoring centers</li>
@@ -16,7 +16,7 @@
   <div
     class="card preset-filled-surface-50-950 border-surface-200-800 divide-surface-200-800 block divide-y overflow-hidden space-y-4 p-4"
   >
-    <header class="h3"><p>End Users</p></header>
+    <header class="h5"><p>End Users</p></header>
     <article>
       <ul class="list-inside list-disc space-y-2">
         <li>Middle and high school students</li>
