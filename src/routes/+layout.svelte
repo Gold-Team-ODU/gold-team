@@ -32,10 +32,10 @@
         ></div>
         <!-- Panel -->
         <div class="min-h-screen relative bg-surface-100-900 rounded-3xl">
-          <div class="grid grid-rows-[auto_1fr_auto] gap-5">
+          <div class="min-h-screen grid grid-rows-[auto_1fr_auto] gap-5">
             <Header />
 
-            <main class="px-5">
+            <main class="px-5 h-full">
               {@render children?.()}
             </main>
 
