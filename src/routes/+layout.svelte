@@ -4,6 +4,8 @@
   import { onMount } from "svelte";
   import { fade } from "svelte/transition";
 
+  import { ProgressRing } from "@skeletonlabs/skeleton-svelte";
+
   import Header from "./Header.svelte";
   import Footer from "./Footer.svelte";
 
@@ -15,25 +17,42 @@
   let { children } = $props();
 </script>
 
-<div class="w-full h-screen">
+<div class="container mx-auto h-screen w-full flex justify-center">
   {#if ready}
     <!-- Fade in content pane -->
     <div
-      class="container mx-auto max-w-xl md:max-w-4xl 2xl:max-w-7xl"
+      class="w-full min-h-screen max-w-xl md:max-w-4xl 2xl:max-w-7xl"
       in:fade={{ duration: 500, delay: 100 }}
     >
-      <div
-        class="place-self-center w-full min-h-screen bg-surface-100-900 drop-shadow-[0_0_30px_rgba(0,0,0,0)] drop-shadow-surface-500/80 rounded-3xl"
-      >
-        <div class="min-h-screen grid grid-rows-[auto_1fr_auto] gap-5">
-          <Header />
+      <!-- Primary content -->
+      <div class="relative">
+        <!-- Shadow -->
+        <div
+          class="absolute -inset-0 bg-surface-950-50 opacity-75 blur-[30px] rounded-3xl"
+        ></div>
+        <!-- Panel -->
+        <div class="min-h-screen relative bg-surface-100-900 rounded-3xl">
+          <div class="grid grid-rows-[auto_1fr_auto] gap-5">
+            <Header />
 
-          <main class="mx-auto px-5 w-full h-full">
-            {@render children?.()}
-          </main>
+            <main class="px-5">
+              {@render children?.()}
+            </main>
 
-          <Footer />
+            <Footer />
+          </div>
         </div>
+      </div>
+    </div>
+  {:else}
+    <div class="container flex mx-auto w-screen min-h-screen justify-center">
+      <div class="container w-fit min-h-screen place-content-center">
+        <ProgressRing
+          value={null}
+          size="size-20"
+          meterStroke="stroke-tertiary-600-400"
+          trackStroke="stroke-tertiary-50-950"
+        />
       </div>
     </div>
   {/if}
