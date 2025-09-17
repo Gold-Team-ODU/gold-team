@@ -18,7 +18,7 @@
     <article class="text-justify self-center pl-5 text-base xl:text-lg">
       <p>
         We aim to develop a game to help those who struggle to understand
-        algebra. Our game will be a turn-based, rogue-like adventure through
+        algebra. Our game will be a single-player, turn-based, rogue-like adventure through
         algebra. With dungeons, bosses, and power-ups all throughout, you'll be
         engaged in the world as much as you are with the math. But be sure to
         calculate your next step carefully. Damage is dealt to the reckless, and

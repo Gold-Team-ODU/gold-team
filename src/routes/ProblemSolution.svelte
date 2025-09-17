@@ -26,7 +26,9 @@
       <Tabs.Panel value="solution">
         <article class="text-justify space-y-2 p-4 pt-2">
           <p>
-            A <span class="font-bold">solo, turn-based, rogue-like game</span>
+            A <span class="font-bold"
+              >single-player, turn-based, rogue-like game</span
+            >
             where the player adventures through dungeons, tackling enemies and increasing
             in power and algebraic knowledge as they adventure along.
           </p>
